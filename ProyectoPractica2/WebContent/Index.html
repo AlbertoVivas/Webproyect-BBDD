@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<body>
+
+<nav class="w3-sidenav white w3-card-2" style="width:25%">
+  <a href="javascript:void(0)" 
+  onclick="w3_close()"
+  class="w3-closenav w3-large">Close &times;</a>
+  <a href="ServletListaDepartamentosJsp">Departamentos</a>		
+<!-- 	 
+  <a href="#">Link 2</a>		
+  <a href="#">Link 3</a>		
+  <a href="#">Link 4</a>		
+  <a href="#">Link 5</a>
+   -->		
+</nav>
+
+<header class="w3-container teal">
+  <i class="material-icons w3-opennav" onclick="w3_open()">menu</i> 
+  <h1>Pagina de acceso a la base de datos</h1>
+</header>
+
+<img src="img/bbdd.jpg" alt="bbdd" style="width:100%">
+
+<div class="w3-container">
+<p>
+Pagina hecha por Alberto Vivas, el acceso a la Base de datos es en Hibernate
+</p>
+</div>
+
+<footer class="w3-container teal">
+  <h5>Contacto</h5>
+  <p>albertovivas@gmail.com</p>
+</footer>
+     
+<script>
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+}
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+}
+</script>
+     
+</body>
+</html>
